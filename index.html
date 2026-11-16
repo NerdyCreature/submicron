@@ -10,9 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0a0e13; --panel:#111821; --panel2:#151e2a; --line:#263241; --line2:#33465e;
-  --text:#eef2f5; --muted:#9fb0c0; --muted2:#c7d2dd;
-  --amber:#ffb020; --orange:#ff6b1a; --red:#ff4d4d; --teal:#2dd4bf; --green:#4ade80;
+  --bg:#04060a; --panel:#0a1526; --panel2:#122036; --line:#26344a; --line2:#3d526e;
+  --text:#ffffff; --muted:#9aa3b2; --muted2:#d3d8e0;
+  --amber:#ffffff; --orange:#8a95a8; --red:#6b7280; --teal:#8fa3bd; --green:#e5e7eb;
   --radius:14px;
 }
 *{box-sizing:border-box}
@@ -22,7 +22,7 @@ a{color:var(--amber)}
 button,select{min-height:44px}
 .mono{font-family:"IBM Plex Mono",monospace}
 .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
-nav{position:sticky;top:0;z-index:20;background:rgba(10,14,19,.94);border-bottom:1px solid var(--line)}
+nav{position:sticky;top:0;z-index:20;background:rgba(4,6,10,.94);border-bottom:1px solid var(--line)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;flex-wrap:wrap}
 .logo{font-weight:900;font-size:20px;letter-spacing:-.02em;text-decoration:none;color:var(--text)}
 .logo i{color:var(--amber);font-style:normal}
@@ -30,21 +30,21 @@ nav{position:sticky;top:0;z-index:20;background:rgba(10,14,19,.94);border-bottom
 .navlinks{display:flex;gap:6px;flex-wrap:wrap}
 .navlinks a{color:var(--muted2);text-decoration:none;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:999px}
 .navlinks a:hover{background:var(--panel2);color:#fff}
-.navlinks a.active{background:var(--amber);color:#14100a}
+.navlinks a.active{background:var(--amber);color:#04060a}
 .nav-dropdown{position:relative;display:inline-block}
 .nav-drop-btn{color:var(--muted2);background:transparent;border:none;font-family:inherit;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:999px;cursor:pointer}
 .nav-drop-btn:hover{background:var(--panel2);color:#fff}
-.nav-drop-btn.active{background:var(--amber);color:#14100a}
+.nav-drop-btn.active{background:var(--amber);color:#04060a}
 .nav-drop-btn .caret{font-size:10px;margin-left:2px}
 .nav-menu{display:none;position:absolute;top:calc(100% + 6px);left:0;background:var(--panel2);border:1px solid var(--line2);border-radius:12px;padding:6px;min-width:170px;box-shadow:0 14px 32px rgba(0,0,0,.45);z-index:30}
 .nav-dropdown.open .nav-menu{display:block}
 @media(hover:hover){.nav-dropdown:hover .nav-menu{display:block}}
 .nav-menu a{display:block;border-radius:8px}
-.nav-menu a.active{background:var(--amber);color:#14100a}
+.nav-menu a.active{background:var(--amber);color:#04060a}
 .page{display:none}
 .page.active{display:block;animation:pageIn .22s ease}
 @keyframes pageIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-.hero{padding:48px 0 36px;border-bottom:1px solid var(--line);background:radial-gradient(900px 400px at 85% -10%,rgba(255,107,26,.14),transparent 60%)}
+.hero{padding:48px 0 36px;border-bottom:1px solid var(--line);background:radial-gradient(900px 400px at 85% -10%,rgba(59,90,132,.35),transparent 60%)}
 .eyebrow,.kicker{color:var(--amber);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:11.5px}
 h1{font-size:clamp(36px,6vw,64px);line-height:.99;letter-spacing:-.04em;margin:12px 0 14px;max-width:840px}
 h1 em{font-style:normal;color:var(--amber)}
@@ -59,19 +59,19 @@ h3{font-size:18px;margin:0 0 8px}
 .quote figcaption{color:var(--muted);font-size:13.5px;margin-top:8px}
 .statgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px;max-width:840px}
 .stat{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
-.stat b{font-size:34px;line-height:1;display:block;letter-spacing:-.03em;color:var(--red)}
+.stat b{font-size:34px;line-height:1;display:block;letter-spacing:-.03em;color:#ffffff}
 .stat span{display:block;color:var(--muted);font-size:13.5px;margin-top:8px;line-height:1.45}
 .stat span strong{color:var(--muted2)}
 .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:999px;font-weight:800;text-decoration:none;border:1px solid var(--line2);color:#fff;background:var(--panel2);cursor:pointer;font-size:15px}
-.btn.primary{background:var(--amber);color:#14100a;border-color:var(--amber)}
+.btn.primary{background:var(--amber);color:#04060a;border-color:var(--amber)}
 section{padding:48px 0}
-section.alt{background:#0d131b;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+section.alt{background:#060b14;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .sub{color:var(--muted);max-width:780px;margin:0 0 24px;font-size:16px}
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
 .panel p{color:var(--muted2)}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.callout{border:1px solid #5b3a12;background:#221a0d;border-radius:12px;padding:16px 18px;margin-top:16px;color:#fde9c0}
+.callout{border:1px solid #3d526e;background:#0d1522;border-radius:12px;padding:16px 18px;margin-top:16px;color:#e5e7eb}
 .callout strong{color:var(--amber)}
 .note{color:var(--muted);font-size:13.5px}
 /* particle chart */
@@ -81,7 +81,7 @@ section.alt{background:#0d131b;border-top:1px solid var(--line);border-bottom:1p
 .chart-cap{color:var(--muted);font-size:13.5px;margin-top:10px}
 /* transport */
 .transport-track{position:relative;height:54px;margin:34px 6px 8px}
-.transport-line{position:absolute;left:0;right:0;top:24px;height:8px;border-radius:999px;background:#222f42}
+.transport-line{position:absolute;left:0;right:0;top:24px;height:8px;border-radius:999px;background:#1e2c42}
 .transport-range{position:absolute;top:24px;height:8px;border-radius:999px;background:linear-gradient(90deg,var(--amber),var(--orange))}
 .transport-dot{position:absolute;top:17px;width:22px;height:22px;border-radius:50%;background:#fff;border:5px solid var(--teal);transform:translateX(-50%)}
 .transport-dot span{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);white-space:nowrap;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--teal);font-weight:600}
@@ -90,19 +90,19 @@ section.alt{background:#0d131b;border-top:1px solid var(--line);border-bottom:1p
 .mat-grid{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
 .mat-btn{border:1px solid var(--line2);background:var(--panel2);color:#fff;border-radius:999px;padding:10px 18px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
 .mat-btn:hover{border-color:var(--amber)}
-.mat-btn.selected{background:var(--amber);color:#14100a;border-color:var(--amber)}
+.mat-btn.selected{background:var(--amber);color:#04060a;border-color:var(--amber)}
 .verdict-box{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
 .verdict-badge{display:inline-block;font-weight:900;letter-spacing:.06em;font-size:14px;padding:7px 14px;border-radius:999px;text-transform:uppercase}
-.verdict-badge.gap{background:var(--red);color:#1a0505}
-.verdict-badge.covered{background:var(--green);color:#0f1a14}
-.verdict-badge.nodata{background:#fde68a;color:#221a05}
+.verdict-badge.gap{background:var(--red);color:#ffffff}
+.verdict-badge.covered{background:var(--green);color:#04060a}
+.verdict-badge.nodata{background:#9ca3af;color:#111827}
 .det-rows{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
-.det-row{border:1px solid var(--line);border-radius:12px;padding:16px;background:#0c141f}
+.det-row{border:1px solid var(--line);border-radius:12px;padding:16px;background:#060d18}
 .det-row b{display:block;margin-bottom:4px}
 .det-row p{margin:0;color:var(--muted2);font-size:14.5px}
 .see-yes{color:var(--green);font-weight:800}
-.see-weak{color:var(--red);font-weight:800}
-.see-unknown{color:#fde68a;font-weight:800}
+.see-weak{color:#9ca3af;font-weight:800}
+.see-unknown{color:#9ca3af;font-weight:800}
 /* compare */
 .compare-controls{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:end;margin-bottom:16px}
 label{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:6px}
@@ -123,28 +123,28 @@ select{width:100%;background:var(--panel2);color:#fff;border:1px solid var(--lin
 .score-chip{display:inline-block;font-size:12px;font-weight:800;padding:5px 10px;border-radius:999px;border:1px solid var(--line2);color:var(--muted2)}
 .side-a .score-chip b{color:var(--amber)} .side-b .score-chip b{color:var(--teal)}
 .compare-body{position:relative}
-.compare-body::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:3px;transform:translateX(-50%);background:linear-gradient(180deg,rgba(255,176,32,.55),rgba(45,212,191,.55));border-radius:999px;pointer-events:none}
+.compare-body::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:3px;transform:translateX(-50%);background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(143,163,189,.55));border-radius:999px;pointer-events:none}
 .chart-panel{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-bottom:16px}
 .chart-legend{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 14px}
 .chart-legend span{font-size:12.5px;font-weight:800;padding:5px 12px;border-radius:999px}
-.chart-legend .lg-a{background:rgba(255,176,32,.16);color:var(--amber);border:1px solid var(--amber)}
-.chart-legend .lg-b{background:rgba(45,212,191,.14);color:var(--teal);border:1px solid var(--teal)}
+.chart-legend .lg-a{background:rgba(255,255,255,.16);color:var(--amber);border:1px solid var(--amber)}
+.chart-legend .lg-b{background:rgba(143,163,189,.14);color:var(--teal);border:1px solid var(--teal)}
 .dot-grid{display:grid;grid-template-columns:1fr 110px 110px;gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .dot-grid>div{padding:13px 14px;border-bottom:1px solid var(--line);display:flex;align-items:center}
 .dot-grid>div:nth-last-child(-n+3){border-bottom:none}
 .dot-grid .dg-head{font-weight:800;font-size:13px;justify-content:center;text-align:center}
-.dot-grid .dg-head.a{color:var(--amber);background:rgba(255,176,32,.07)}
-.dot-grid .dg-head.b{color:var(--teal);background:rgba(45,212,191,.06)}
+.dot-grid .dg-head.a{color:var(--amber);background:rgba(255,255,255,.07)}
+.dot-grid .dg-head.b{color:var(--teal);background:rgba(143,163,189,.06)}
 .dot-grid .dg-label{color:var(--muted2);font-size:14.5px;font-weight:600}
 .dot-grid .dg-cell{justify-content:center}
-.dot-grid .dg-cell.a{background:rgba(255,176,32,.05)}
-.dot-grid .dg-cell.b{background:rgba(45,212,191,.04)}
+.dot-grid .dg-cell.a{background:rgba(255,255,255,.05)}
+.dot-grid .dg-cell.b{background:rgba(143,163,189,.04)}
 .dot{width:24px;height:24px;border-radius:50%;flex:none}
 .dot.yes-a{background:var(--amber)} .dot.yes-b{background:var(--teal)}
 .dot.no{background:transparent;border:2px solid var(--line2)}
 .scale-wrap{padding:8px 4px 0}
 .scale-track{position:relative;height:86px;margin:0 10px}
-.scale-line{position:absolute;left:0;right:0;top:42px;height:6px;border-radius:999px;background:#222f42}
+.scale-line{position:absolute;left:0;right:0;top:42px;height:6px;border-radius:999px;background:#1e2c42}
 .scale-marker{position:absolute;top:32px;transform:translateX(-50%);text-align:center}
 .scale-marker i{display:block;width:26px;height:26px;border-radius:50%;margin:0 auto;border:3px solid var(--bg)}
 .scale-marker.a i{background:var(--amber)} .scale-marker.b i{background:var(--teal)}
@@ -152,16 +152,16 @@ select{width:100%;background:var(--panel2);color:#fff;border:1px solid var(--lin
 .scale-marker.a span{color:var(--amber)} .scale-marker.b span{color:var(--teal)}
 .scale-marker.above{top:0} .scale-marker.above span{margin:0 0 6px}
 .scale-labels{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;color:var(--muted);font-size:12.5px;text-align:center;margin-top:2px}
-.verdict-panel{position:relative;border:1px solid var(--line2);border-radius:var(--radius);padding:22px;background:#0c141f;margin-top:16px}
+.verdict-panel{position:relative;border:1px solid var(--line2);border-radius:var(--radius);padding:22px;background:#060d18;margin-top:16px}
 .verdict-panel p{font-size:16.5px;margin:0 0 10px;color:var(--muted2)}
 .verdict-panel p strong.a{color:var(--amber)} .verdict-panel p strong.b{color:var(--teal)}
 .verdict-panel .shared{color:#fff;font-weight:600;margin:0}
 .compare-table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
 .compare-table th,.compare-table td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);font-size:14.5px}
-.compare-table th{background:#16202e;width:22%}
+.compare-table th{background:#101e33;width:22%}
 .compare-table td{width:39%;color:var(--muted2)}
-.compare-table td.col-a{background:rgba(255,176,32,.045)}
-.compare-table td.col-b{background:rgba(45,212,191,.04);border-left:3px solid var(--line2)}
+.compare-table td.col-a{background:rgba(255,255,255,.045)}
+.compare-table td.col-b{background:rgba(143,163,189,.04);border-left:3px solid var(--line2)}
 .compare-table tr:last-child th,.compare-table tr:last-child td{border-bottom:none}
 /* investigations */
 .board{display:flex;flex-direction:column;gap:14px}
@@ -172,10 +172,10 @@ select{width:100%;background:var(--panel2);color:#fff;border:1px solid var(--lin
 .chip{font-size:12px;font-weight:800;padding:5px 10px;border-radius:999px;border:1px solid var(--line2);color:var(--muted2);white-space:nowrap}
 .chip b{color:var(--amber)}
 .pill{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;border-radius:999px;border:1px solid var(--line2);color:var(--muted2);margin-top:8px;margin-right:6px}
-.pill.det{color:#0f1a14;background:var(--green);border-color:var(--green)}
-.pill.warn{color:#221a05;background:#fde68a;border-color:#fde68a}
+.pill.det{color:#04060a;background:var(--green);border-color:var(--green)}
+.pill.warn{color:#111827;background:#9ca3af;border-color:#9ca3af}
 .card p{color:var(--muted2);font-size:14.5px}
-.finding{background:#0c141f;border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-top:10px;color:var(--muted2);font-size:14.5px}
+.finding{background:#060d18;border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-top:10px;color:var(--muted2);font-size:14.5px}
 .finding b{color:var(--amber);text-transform:uppercase;font-size:11px;letter-spacing:.1em;display:block;margin-bottom:4px}
 details{margin-top:10px}
 summary{cursor:pointer;font-weight:700;color:#fff;padding:8px 0;min-height:36px}
@@ -215,40 +215,40 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);f
 .env-bar-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:end}
 .env-note{color:var(--muted2);font-size:15px;margin:14px 0 0;line-height:1.55}
 .env-note strong{color:#fff}
-.env-gap{border:1px solid #7a2e2e;background:#2a1212;border-radius:12px;padding:14px 16px;margin-top:14px;color:#fecaca;font-size:14.5px;line-height:1.55}
+.env-gap{border:1px solid #4b5563;background:#111827;border-radius:12px;padding:14px 16px;margin-top:14px;color:#e5e7eb;font-size:14.5px;line-height:1.55}
 .env-gap strong{color:#fff}
 .score-stack{display:flex;flex-direction:column;gap:6px;align-items:flex-end}
 .score-stack .chip{white-space:normal;text-align:right}
 .adj-reason{font-size:12.5px;color:var(--teal);font-weight:700;text-align:right;max-width:300px;line-height:1.45}
-.rank-badge{display:inline-block;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#14100a;background:var(--amber);border-radius:999px;padding:4px 9px;margin-bottom:8px}
+.rank-badge{display:inline-block;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#04060a;background:var(--amber);border-radius:999px;padding:4px 9px;margin-bottom:8px}
 /* compare materials */
 .manifest-layout{display:grid;grid-template-columns:360px 1fr;gap:16px;align-items:start}
 .manifest-controls{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
 .manifest-controls h3{font-size:16px}
 .check-list{display:flex;flex-direction:column;gap:8px;margin-top:10px}
-.check-item{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#0c141f;cursor:pointer}
+.check-item{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#060d18;cursor:pointer}
 .check-item input{width:22px;height:22px;margin:1px 0 0;accent-color:var(--amber);flex:none;cursor:pointer}
 .check-item span{font-weight:700;font-size:15px;line-height:1.35}
 .check-item small{display:block;font-weight:600;color:var(--muted);font-size:12.5px;margin-top:2px;line-height:1.4}
 .manifest-results{display:flex;flex-direction:column;gap:12px}
 .manifest-summary{background:var(--panel);border:1px solid var(--line2);border-radius:var(--radius);padding:20px}
 .manifest-summary .big{font-size:22px;font-weight:800;line-height:1.3;letter-spacing:-.02em}
-.manifest-summary .big b{color:var(--red)}
+.manifest-summary .big b{color:#ffffff}
 .manifest-summary p{color:var(--muted2);margin:8px 0 0;font-size:14.5px}
 .manifest-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
-.manifest-card.blind{border-color:#7a2e2e;background:#1c1216}
-.manifest-card.detected{border-color:#2f5d3a}
-.manifest-card.matched{border-color:#2a5a54}
-.manifest-card.covered{border-color:#5b4a1a}
+.manifest-card.blind{border-color:#4b5563;background:#0d1522}
+.manifest-card.detected{border-color:#6b7280}
+.manifest-card.matched{border-color:#3d526e}
+.manifest-card.covered{border-color:#374151}
 .manifest-card-top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:flex-start}
 .manifest-card h3{font-size:17px;margin:0}
 .manifest-card p{color:var(--muted2);margin:8px 0 0;font-size:14.5px}
 .flag{display:inline-block;font-weight:900;letter-spacing:.05em;font-size:12.5px;padding:6px 11px;border-radius:999px;text-transform:uppercase;white-space:nowrap}
-.flag.blind{background:var(--red);color:#1a0505}
-.flag.detected{background:var(--green);color:#0f1a14}
-.flag.matched{background:var(--teal);color:#06201c}
-.flag.covered{background:var(--amber);color:#14100a}
-.flag.nodata{background:#fde68a;color:#221a05}
+.flag.blind{background:var(--red);color:#ffffff}
+.flag.detected{background:var(--green);color:#04060a}
+.flag.matched{background:var(--teal);color:#04060a}
+.flag.covered{background:var(--amber);color:#04060a}
+.flag.nodata{background:#9ca3af;color:#111827}
 .kind-tag{display:inline-block;font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;padding:4px 8px;border-radius:999px;border:1px solid var(--line2);color:var(--muted2);margin-top:8px}
 .kind-tag.tested{border-color:var(--green);color:var(--green)}
 .kind-tag.judgement{border-color:var(--teal);color:var(--teal)}
@@ -261,7 +261,7 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);f
 }
 @media(max-width:520px){.rubric-compact{grid-template-columns:1fr}}
 /* live speed ranking chart */
-.speed-verdict{margin-top:14px;background:#0c141f;border:1px solid var(--line2);border-radius:12px;padding:16px 18px}
+.speed-verdict{margin-top:14px;background:#060d18;border:1px solid var(--line2);border-radius:12px;padding:16px 18px}
 .speed-verdict .winner{font-size:18px;font-weight:800;line-height:1.35}
 .speed-verdict p{color:var(--muted2);margin:8px 0 0;font-size:14.5px}
 .speed-verdict p strong.a{color:var(--amber)} .speed-verdict p strong.b{color:var(--teal)}
@@ -269,13 +269,13 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);f
 .rank-strip h4{margin:0 0 10px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .rank-row{display:grid;grid-template-columns:34px 118px 1fr 86px;gap:10px;align-items:center;padding:7px 8px;border-radius:8px}
 .rank-row + .rank-row{margin-top:2px}
-.rank-row.is-a{background:rgba(255,176,32,.10);outline:1px solid rgba(255,176,32,.45)}
-.rank-row.is-b{background:rgba(45,212,191,.09);outline:1px solid rgba(45,212,191,.45)}
+.rank-row.is-a{background:rgba(255,255,255,.10);outline:1px solid rgba(255,255,255,.45)}
+.rank-row.is-b{background:rgba(143,163,189,.09);outline:1px solid rgba(143,163,189,.45)}
 .rank-row .rk{font-family:"IBM Plex Mono",monospace;font-weight:700;color:var(--muted);text-align:center}
 .rank-row.is-a .rk{color:var(--amber)} .rank-row.is-b .rk{color:var(--teal)}
 .rank-row .rn{font-weight:800;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.rank-row .rtrack{height:12px;background:#222f42;border-radius:999px;overflow:hidden}
-.rank-row .rfill{height:100%;border-radius:999px;background:#5b6b7f}
+.rank-row .rtrack{height:12px;background:#1e2c42;border-radius:999px;overflow:hidden}
+.rank-row .rfill{height:100%;border-radius:999px;background:#6b7a8d}
 .rank-row.is-a .rfill{background:var(--amber)} .rank-row.is-b .rfill{background:var(--teal)}
 .rank-row .rs{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--muted2);text-align:right;white-space:nowrap}
 .rank-row .rs b{color:#fff}
@@ -574,42 +574,42 @@ var ION_DATA = [[10,0.92],[30,0.88],[100,0.78],[200,0.67],[400,0.55],[700,0.45],
 var PHOTO_DATA = [[10,0.10],[30,0.14],[100,0.22],[200,0.32],[400,0.46],[700,0.57],[1000,0.64],[3000,0.80],[10000,0.90]];
 function xyChartSVG(overlaySVG){
   var vGrid = [10,100,1000,10000].map(function(v){
-    return '<line x1="' + xyX(v) + '" y1="' + XY.top + '" x2="' + xyX(v) + '" y2="' + XY.bottom + '" stroke="#263241" stroke-width="1"/>' +
-      '<text x="' + xyX(v) + '" y="' + (XY.bottom + 22) + '" fill="#c7d2dd" font-size="12.5" text-anchor="middle" font-family="IBM Plex Mono, monospace">' + v + '</text>';
+    return '<line x1="' + xyX(v) + '" y1="' + XY.top + '" x2="' + xyX(v) + '" y2="' + XY.bottom + '" stroke="#26344a" stroke-width="1"/>' +
+      '<text x="' + xyX(v) + '" y="' + (XY.bottom + 22) + '" fill="#d3d8e0" font-size="12.5" text-anchor="middle" font-family="IBM Plex Mono, monospace">' + v + '</text>';
   }).join("") + [200,500].map(function(v){
     /* Minor ticks at the exact band edges, so a reader can check the shaded
        bands against the axis: 200 nm ends the dark band, 500 nm ends the light band. */
-    return '<line x1="' + xyX(v) + '" y1="' + XY.top + '" x2="' + xyX(v) + '" y2="' + XY.bottom + '" stroke="#33465e" stroke-width="1" stroke-dasharray="3 4"/>' +
-      '<text x="' + xyX(v) + '" y="' + (XY.bottom + 22) + '" fill="#9fb0c0" font-size="12.5" text-anchor="middle" font-family="IBM Plex Mono, monospace">' + v + '</text>';
+    return '<line x1="' + xyX(v) + '" y1="' + XY.top + '" x2="' + xyX(v) + '" y2="' + XY.bottom + '" stroke="#3d526e" stroke-width="1" stroke-dasharray="3 4"/>' +
+      '<text x="' + xyX(v) + '" y="' + (XY.bottom + 22) + '" fill="#9aa3b2" font-size="12.5" text-anchor="middle" font-family="IBM Plex Mono, monospace">' + v + '</text>';
   }).join("");
   var hGrid = [0,0.25,0.5,0.75,1].map(function(s){
-    return '<line x1="' + XY.left + '" y1="' + xyY(s) + '" x2="' + XY.right + '" y2="' + xyY(s) + '" stroke="#263241" stroke-width="1"/>';
+    return '<line x1="' + XY.left + '" y1="' + xyY(s) + '" x2="' + XY.right + '" y2="' + xyY(s) + '" stroke="#26344a" stroke-width="1"/>';
   }).join("") +
-    '<text x="' + (XY.left - 10) + '" y="' + (xyY(1) + 4) + '" fill="#c7d2dd" font-size="12.5" text-anchor="end" font-weight="700">High</text>' +
-    '<text x="' + (XY.left - 10) + '" y="' + (xyY(0) + 4) + '" fill="#c7d2dd" font-size="12.5" text-anchor="end" font-weight="700">Low</text>';
+    '<text x="' + (XY.left - 10) + '" y="' + (xyY(1) + 4) + '" fill="#d3d8e0" font-size="12.5" text-anchor="end" font-weight="700">High</text>' +
+    '<text x="' + (XY.left - 10) + '" y="' + (xyY(0) + 4) + '" fill="#d3d8e0" font-size="12.5" text-anchor="end" font-weight="700">Low</text>';
   var yWords = "";
   var bands =
-    '<rect x="' + xyX(100) + '" y="' + XY.top + '" width="' + (xyX(200) - xyX(100)) + '" height="' + XY.h + '" fill="#eef2f5" opacity="0.20"/>' +
-    '<rect x="' + xyX(200) + '" y="' + XY.top + '" width="' + (xyX(500) - xyX(200)) + '" height="' + XY.h + '" fill="#eef2f5" opacity="0.08"/>' +
-    '<line x1="' + xyX(1000) + '" y1="' + XY.top + '" x2="' + xyX(1000) + '" y2="' + XY.bottom + '" stroke="#ff4d4d" stroke-width="2" stroke-dasharray="7 5"/>';
+    '<rect x="' + xyX(100) + '" y="' + XY.top + '" width="' + (xyX(200) - xyX(100)) + '" height="' + XY.h + '" fill="#ffffff" opacity="0.20"/>' +
+    '<rect x="' + xyX(200) + '" y="' + XY.top + '" width="' + (xyX(500) - xyX(200)) + '" height="' + XY.h + '" fill="#ffffff" opacity="0.08"/>' +
+    '<line x1="' + xyX(1000) + '" y1="' + XY.top + '" x2="' + xyX(1000) + '" y2="' + XY.bottom + '" stroke="#6b7280" stroke-width="2" stroke-dasharray="7 5"/>';
   var bandLabels =
-    '<rect x="' + XY.left + '" y="14" width="18" height="12" fill="#eef2f5" opacity="0.35"/>' +
-    '<text x="' + (XY.left + 26) + '" y="24" fill="#eef2f5" font-size="12.5" font-weight="700">Dark band: SAME smoke, mean diameter 100 to 200 nm</text>' +
-    '<rect x="' + XY.left + '" y="38" width="18" height="12" fill="#eef2f5" opacity="0.14"/>' +
-    '<text x="' + (XY.left + 26) + '" y="48" fill="#c7d2dd" font-size="12.5" font-weight="700">Light band: a substantial portion of SAME smoke is under 500 nm</text>' +
-    '<line x1="' + XY.left + '" y1="68" x2="' + (XY.left + 18) + '" y2="68" stroke="#ff4d4d" stroke-width="2" stroke-dasharray="5 3"/>' +
-    '<text x="' + (XY.left + 26) + '" y="72" fill="#ff9d9d" font-size="12.5" font-weight="700">Dashed line at 1,000 nm: Teflon smoke is primarily under this size</text>' +
-    '<text x="' + XY.left + '" y="100" fill="#9fb0c0" font-size="12">Bands and dashed line: measured SAME results, drawn to scale. Check their edges against the axis labels below.</text>';
+    '<rect x="' + XY.left + '" y="14" width="18" height="12" fill="#ffffff" opacity="0.35"/>' +
+    '<text x="' + (XY.left + 26) + '" y="24" fill="#ffffff" font-size="12.5" font-weight="700">Dark band: SAME smoke, mean diameter 100 to 200 nm</text>' +
+    '<rect x="' + XY.left + '" y="38" width="18" height="12" fill="#ffffff" opacity="0.14"/>' +
+    '<text x="' + (XY.left + 26) + '" y="48" fill="#d3d8e0" font-size="12.5" font-weight="700">Light band: a substantial portion of SAME smoke is under 500 nm</text>' +
+    '<line x1="' + XY.left + '" y1="68" x2="' + (XY.left + 18) + '" y2="68" stroke="#6b7280" stroke-width="2" stroke-dasharray="5 3"/>' +
+    '<text x="' + (XY.left + 26) + '" y="72" fill="#d1d5db" font-size="12.5" font-weight="700">Dashed line at 1,000 nm: Teflon smoke is primarily under this size</text>' +
+    '<text x="' + XY.left + '" y="100" fill="#9aa3b2" font-size="12">Bands and dashed line: measured SAME results, drawn to scale. Check their edges against the axis labels below.</text>';
   var curves =
-    '<path d="' + xySmooth(xyCurve(ION_DATA)) + '" fill="none" stroke="#2dd4bf" stroke-width="3.5" stroke-linecap="round"/>' +
-    '<path d="' + xySmooth(xyCurve(PHOTO_DATA)) + '" fill="none" stroke="#ffb020" stroke-width="3.5" stroke-linecap="round"/>' +
-    '<text x="' + (xyX(10) + 14) + '" y="' + (xyY(0.92) - 14) + '" fill="#2dd4bf" font-size="13.5" font-weight="800" style="paint-order:stroke" stroke="#0a0e13" stroke-width="4">Ionization: best for small particles</text>' +
-    '<text x="' + (xyX(10000) - 14) + '" y="' + (xyY(0.90) - 14) + '" fill="#ffb020" font-size="13.5" font-weight="800" text-anchor="end" style="paint-order:stroke" stroke="#0a0e13" stroke-width="4">Photoelectric: best for large particles</text>';
+    '<path d="' + xySmooth(xyCurve(ION_DATA)) + '" fill="none" stroke="#8fa3bd" stroke-width="3.5" stroke-linecap="round"/>' +
+    '<path d="' + xySmooth(xyCurve(PHOTO_DATA)) + '" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>' +
+    '<text x="' + (xyX(10) + 14) + '" y="' + (xyY(0.92) - 14) + '" fill="#8fa3bd" font-size="13.5" font-weight="800" style="paint-order:stroke" stroke="#04060a" stroke-width="4">Ionization: best for small particles</text>' +
+    '<text x="' + (xyX(10000) - 14) + '" y="' + (xyY(0.90) - 14) + '" fill="#ffffff" font-size="13.5" font-weight="800" text-anchor="end" style="paint-order:stroke" stroke="#04060a" stroke-width="4">Photoelectric: best for large particles</text>';
   var axes =
-    '<line x1="' + XY.left + '" y1="' + XY.top + '" x2="' + XY.left + '" y2="' + XY.bottom + '" stroke="#c7d2dd" stroke-width="1.8"/>' +
-    '<line x1="' + XY.left + '" y1="' + XY.bottom + '" x2="' + XY.right + '" y2="' + XY.bottom + '" stroke="#c7d2dd" stroke-width="1.8"/>' +
-    '<text x="' + ((XY.left + XY.right) / 2) + '" y="' + (XY.bottom + 48) + '" fill="#eef2f5" font-size="13.5" font-weight="700" text-anchor="middle">Particle diameter (nm, log scale)</text>' +
-    '<text transform="rotate(-90 24 ' + ((XY.top + XY.bottom) / 2) + ')" x="24" y="' + ((XY.top + XY.bottom) / 2) + '" fill="#eef2f5" font-size="13.5" font-weight="700" text-anchor="middle">Relative detector response</text>';
+    '<line x1="' + XY.left + '" y1="' + XY.top + '" x2="' + XY.left + '" y2="' + XY.bottom + '" stroke="#d3d8e0" stroke-width="1.8"/>' +
+    '<line x1="' + XY.left + '" y1="' + XY.bottom + '" x2="' + XY.right + '" y2="' + XY.bottom + '" stroke="#d3d8e0" stroke-width="1.8"/>' +
+    '<text x="' + ((XY.left + XY.right) / 2) + '" y="' + (XY.bottom + 48) + '" fill="#ffffff" font-size="13.5" font-weight="700" text-anchor="middle">Particle diameter (nm, log scale)</text>' +
+    '<text transform="rotate(-90 24 ' + ((XY.top + XY.bottom) / 2) + ')" x="24" y="' + ((XY.top + XY.bottom) / 2) + '" fill="#ffffff" font-size="13.5" font-weight="700" text-anchor="middle">Relative detector response</text>';
   return '<svg viewBox="0 0 800 440" role="img" aria-label="Chart of smoke particle diameter against detector response. Horizontal axis is particle diameter in nanometres on a log scale from 10 to 10000, with labels at 10, 100, 200, 500, 1000 and 10000. Vertical axis is relative detector response, marked only High and Low because no numeric sensitivity values are published. The ionization curve is high for small particles and falls. The photoelectric curve is low for small particles and rises. A dark shaded band from 100 to 200 nanometres shows the SAME smoke mean diameter, a lighter band continues to 500 nanometres for the portion of smoke under that size, and a dashed line at 1000 nanometres marks Teflon smoke as primarily under that size." style="width:100%;height:auto;display:block">' +
     axes + vGrid + hGrid + yWords + bands + (overlaySVG || "") + curves + bandLabels +
     '</svg>';
@@ -966,32 +966,32 @@ function renderSpeedChart(a, b){
   function Y(pct){ return B - (pct/100)*plotH; }
   var grid="";
   [0,25,50,75,100].forEach(function(g){
-    grid += '<line x1="'+L+'" y1="'+Y(g)+'" x2="'+R+'" y2="'+Y(g)+'" stroke="#263241" stroke-width="1"/>'+
-      '<text x="'+(L-10)+'" y="'+(Y(g)+4)+'" fill="#9fb0c0" font-size="12" text-anchor="end" font-family="IBM Plex Mono,monospace">'+g+'%</text>';
+    grid += '<line x1="'+L+'" y1="'+Y(g)+'" x2="'+R+'" y2="'+Y(g)+'" stroke="#26344a" stroke-width="1"/>'+
+      '<text x="'+(L-10)+'" y="'+(Y(g)+4)+'" fill="#9aa3b2" font-size="12" text-anchor="end" font-family="IBM Plex Mono,monospace">'+g+'%</text>';
   });
   var stageLabels="";
   stages.forEach(function(s,i){
-    stageLabels += '<text x="'+X(i)+'" y="'+(B+26)+'" fill="#eef2f5" font-size="13" font-weight="800" text-anchor="middle">'+s.label+'</text>'+
-      '<text x="'+X(i)+'" y="'+(B+44)+'" fill="#9fb0c0" font-size="11.5" text-anchor="middle" font-family="IBM Plex Mono,monospace">'+s.sub+'</text>';
+    stageLabels += '<text x="'+X(i)+'" y="'+(B+26)+'" fill="#ffffff" font-size="13" font-weight="800" text-anchor="middle">'+s.label+'</text>'+
+      '<text x="'+X(i)+'" y="'+(B+44)+'" fill="#9aa3b2" font-size="11.5" text-anchor="middle" font-family="IBM Plex Mono,monospace">'+s.sub+'</text>';
   });
   function series(d, side){
-    var color = side==="a" ? "#ffb020" : "#2dd4bf";
+    var color = side==="a" ? "#ffffff" : "#8fa3bd";
     var pts = stages.map(function(s,i){ var r=s.get(d); var pct=Math.round(r.v/r.max*100); return {x:X(i), y:Y(pct), pct:pct, raw:r.v+"/"+r.max}; });
     var path = pts.map(function(p,i){ return (i===0?"M ":"L ")+p.x.toFixed(1)+" "+p.y.toFixed(1); }).join(" ");
     var dots="", labels="";
     pts.forEach(function(p,i){
-      dots += '<circle cx="'+p.x+'" cy="'+p.y+'" r="7" fill="'+color+'" stroke="#0a0e13" stroke-width="2.5"/>';
+      dots += '<circle cx="'+p.x+'" cy="'+p.y+'" r="7" fill="'+color+'" stroke="#04060a" stroke-width="2.5"/>';
       /* Offset A above, B below when points are close to avoid overlap */
       var close = Math.abs(seriesPct(a,stages[i]) - seriesPct(b,stages[i])) < 14;
       var dy = close ? (side==="a" ? -14 : 22) : -14;
-      labels += '<text x="'+p.x+'" y="'+(p.y+dy)+'" fill="'+color+'" font-size="13" font-weight="800" text-anchor="middle" style="paint-order:stroke" stroke="#111821" stroke-width="4">'+p.raw+' · '+p.pct+'%</text>';
+      labels += '<text x="'+p.x+'" y="'+(p.y+dy)+'" fill="'+color+'" font-size="13" font-weight="800" text-anchor="middle" style="paint-order:stroke" stroke="#0a1526" stroke-width="4">'+p.raw+' · '+p.pct+'%</text>';
     });
     return '<path d="'+path+'" fill="none" stroke="'+color+'" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>'+dots+labels;
   }
   function seriesPct(d, s){ var r=s.get(d); return r.v/r.max*100; }
   var svg = '<svg viewBox="0 0 800 360" role="img" aria-label="Slope chart comparing detection scores. Each line moves based on the selected study scores." style="width:100%;height:auto;display:block">'+
     grid + series(a,"a") + series(b,"b") + stageLabels +
-    '<text x="24" y="180" transform="rotate(-90 24 180)" fill="#eef2f5" font-size="12.5" font-weight="700" text-anchor="middle">% of maximum score</text>'+
+    '<text x="24" y="180" transform="rotate(-90 24 180)" fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle">% of maximum score</text>'+
     '</svg>';
   document.getElementById("chartSpeed").innerHTML = svg;
 
@@ -1021,11 +1021,11 @@ function countChart(a, b, key, maxVal, axisLabel){
   function xv(v){ return x0 + (v / maxVal) * (x1 - x0); }
   var grid = "";
   for(var t = 0; t <= maxVal; t++){
-    grid += '<line x1="' + xv(t) + '" y1="18" x2="' + xv(t) + '" y2="146" stroke="#263241" stroke-width="1"/>' +
-      '<text x="' + xv(t) + '" y="166" fill="#9fb0c0" font-size="12.5" text-anchor="middle" font-family="IBM Plex Mono, monospace">' + t + '</text>';
+    grid += '<line x1="' + xv(t) + '" y1="18" x2="' + xv(t) + '" y2="146" stroke="#26344a" stroke-width="1"/>' +
+      '<text x="' + xv(t) + '" y="166" fill="#9aa3b2" font-size="12.5" text-anchor="middle" font-family="IBM Plex Mono, monospace">' + t + '</text>';
   }
   function row(d, side, labelY){
-    var color = side === "a" ? "#ffb020" : "#2dd4bf";
+    var color = side === "a" ? "#ffffff" : "#8fa3bd";
     var v = CHART_DATA[d.id][key];
     var barY = labelY + 8;
     var head = '<text x="' + x0 + '" y="' + labelY + '" fill="' + color + '" font-size="14.5" font-weight="800">' + (side === "a" ? "A, " : "B, ") + d.name + '</text>';
@@ -1040,7 +1040,7 @@ function countChart(a, b, key, maxVal, axisLabel){
   }
   return '<svg viewBox="0 0 800 196" role="img" aria-label="Bar chart: ' + axisLabel + '" style="width:100%;height:auto;display:block">' + grid +
     row(a, "a", 38) + row(b, "b", 102) +
-    '<text x="385" y="190" fill="#9fb0c0" font-size="12.5" text-anchor="middle" font-weight="600">' + axisLabel + '</text></svg>';
+    '<text x="385" y="190" fill="#9aa3b2" font-size="12.5" text-anchor="middle" font-weight="600">' + axisLabel + '</text></svg>';
 }
 function renderDetectors(a, b){
   document.getElementById("chartDetectors").innerHTML = countChart(a, b, "detectors", 3, "Detector and sensor types tested, count") +
@@ -1067,20 +1067,20 @@ function renderMiss(a, b){
   function xv(v){ return x0 + (v / 100) * (x1 - x0); }
   var grid = "";
   [0, 25, 50, 75, 100].forEach(function(t){
-    grid += '<line x1="' + xv(t) + '" y1="18" x2="' + xv(t) + '" y2="146" stroke="#263241" stroke-width="1"/>' +
-      '<text x="' + xv(t) + '" y="166" fill="#9fb0c0" font-size="12.5" text-anchor="middle" font-family="IBM Plex Mono, monospace">' + t + '%</text>';
+    grid += '<line x1="' + xv(t) + '" y1="18" x2="' + xv(t) + '" y2="146" stroke="#26344a" stroke-width="1"/>' +
+      '<text x="' + xv(t) + '" y="166" fill="#9aa3b2" font-size="12.5" text-anchor="middle" font-family="IBM Plex Mono, monospace">' + t + '%</text>';
   });
   function row(label, v, frac, labelY){
     var barY = labelY + 8;
-    return '<text x="' + x0 + '" y="' + labelY + '" fill="#eef2f5" font-size="14.5" font-weight="800">' + label + '</text>' +
-      '<rect x="' + x0 + '" y="' + barY + '" width="' + (xv(v) - x0) + '" height="26" rx="6" fill="#ff4d4d"/>' +
+    return '<text x="' + x0 + '" y="' + labelY + '" fill="#ffffff" font-size="14.5" font-weight="800">' + label + '</text>' +
+      '<rect x="' + x0 + '" y="' + barY + '" width="' + (xv(v) - x0) + '" height="26" rx="6" fill="#6b7280"/>' +
       '<text x="' + (xv(v) + 12) + '" y="' + (barY + 19) + '" fill="#ffffff" font-size="16" font-weight="800">' + v + '%</text>' +
-      '<text x="' + (xv(v) + 64) + '" y="' + (barY + 19) + '" fill="#9fb0c0" font-size="12.5">' + frac + '</text>';
+      '<text x="' + (xv(v) + 64) + '" y="' + (barY + 19) + '" fill="#9aa3b2" font-size="12.5">' + frac + '</text>';
   }
   box.innerHTML = '<svg viewBox="0 0 800 196" role="img" aria-label="Bar chart of the share of SAME tests where the ISS photoelectric detector failed to alarm, by material" style="width:100%;height:auto;display:block">' + grid +
     row("Kapton smoke", 50, "failed to alarm in 1 of 2 tests", 38) +
     row("Teflon smoke", 67, "failed to alarm in 2 of 3 tests", 102) +
-    '<text x="375" y="190" fill="#9fb0c0" font-size="12.5" text-anchor="middle" font-weight="600">Tests where the detector failed to alarm, percent</text></svg>' +
+    '<text x="375" y="190" fill="#9aa3b2" font-size="12.5" text-anchor="middle" font-weight="600">Tests where the detector failed to alarm, percent</text></svg>' +
     '<p class="chart-cap">From the SAME tests reported in the NIST final report. The ISS photoelectric detector failed to alarm for Kapton smoke in half of the tests and for Teflon smoke in two thirds of the tests. Teflon and Kapton are the insulation materials wrapped around spacecraft electronics.</p>';
 }
 function renderCompare(){
@@ -1094,7 +1094,7 @@ function renderCompare(){
   renderSeries(a, b);
   renderMiss(a, b);
   var rows = [
-    ["Investigation", "<strong style='color:#ffb020'>" + a.name + "</strong><br>" + a.full, "<strong style='color:#2dd4bf'>" + b.name + "</strong><br>" + b.full],
+    ["Investigation", "<strong style='color:#ffffff'>" + a.name + "</strong><br>" + a.full, "<strong style='color:#8fa3bd'>" + b.name + "</strong><br>" + b.full],
     ["Pillar", a.pillar, b.pillar],
     ["Venue and hardware", a.venue, b.venue],
     ["Materials", a.materials, b.materials],
